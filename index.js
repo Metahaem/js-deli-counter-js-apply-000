@@ -5,7 +5,12 @@ function takeANumber(array, name) {
   array.push(name);
   return("Welcome, " + name + ". You are number " + array.length + " in line.");
 }
-
+var i = 0;
+function takeANumberAlt(array) {
+  
+  array.push(i);
+  i++;
+}
 
 //Task 2
 
@@ -25,9 +30,15 @@ function currentLine(array) {
     var i;
     let posName = [];
    for (let i = 0; i < array.length; i++) 
+<<<<<<< HEAD
        {posName.push((i + 1) + ". " + array[i])}
        //Above loop gives array posName its values
         return ("The line is currently: " + posName.join(', '));
+=======
+       {posName.push(" " + (i + 1) + ". " + array[i])}
+       //Above loop gives array posName its values
+        return ("The line is currently:  " + posName.join()); 
+>>>>>>> c74db549fdebec9eb81b58c388e3a51965455fa1
        }
        
   else
